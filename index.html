@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THUNDERSTRIKE UNIT</title>
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body><!--
+    <button class="tablink" onclick="openPage('Home', this, 'rgb(250, 66, 66)')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Units', this, 'rgb(44, 139, 44)')">Units</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'rgb(39, 39, 228)')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, 'rgb(255, 191, 72)')">About</button>
+    -->
+    <button class="tablink" onclick="openPage('Home', this, 'rgb(0,0,0)')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Units', this, 'rgb(0,0,0)')">Units</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'rgb(0,0,0)')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, 'rgb(0,0,0)')">About</button>
+
+    <div id="Home" class="tabcontent">
+        <div class="tabcontent-home">
+            <h1>THUNDERSTRIKE UNIT</h1>
+            <h3>"BAJATE RAHO!!!"</h3>
+            <p class="opening">
+                Our unit is based on safety and security services.<br><br>
+                Personnel are highly trained and are proficient in working in any scenarios.<br><br>
+                Equipped with high-end modern equipments.<br><br>
+                Ready to serve for good.<br><br>
+            </p>
+        </div>
+    </div>
+
+    <div id="Units" class="tabcontent">
+        <article class="unit">
+            <div class="division-1">
+                <button class="unit-btn" onclick="openLink(event, 'Left')">UNIT-1:Infantry</button>
+                <p class="info">
+                    Comprises of personnel with good level of equipment knowledge. <br><br>
+                    Well profecient in Hand-to-Hand combat and also have good knowledge in weapon handling.<br><br>
+                    Trained well and ready to serve in any scenarios.<br><br>
+                </p>
+            </div>
+        </article>
+        <article class="unit">
+            <div class="division-2">
+                <button class="unit-btn" onclick="openLink(event, 'Left')">UNIT-2:Scout Jeeps</button>
+                <p class="info">
+                    For patrolling the regions.<br><br>
+                    Skilled drivers for faster and agile response.<br><br>
+                    4x4 jeeps to work on all terrains.<br><br>/>
+                </p>
+            </div>
+        </article>
+        <article class="unit">
+            <div class="division-3">
+                <button class="unit-btn" onclick="openLink(event, 'Left')">UNIT-3:K9 Dog squad</button>
+                <p class="info">
+                    Healthy and well bred dogs.<br><br>
+                    Well trained and handled by professionals.<br><br>
+                    Full safety measures followed and no canines are harmed.<br><br>             </p>
+            </div>
+        </article>
+        <article class="unit">
+            <div class="division-4">
+                <button class="unit-btn" onclick="openLink(event, 'Left')">UNIT-4:Seahorse Boats</button>
+                <p class="info">
+                    High speed and highly manoeuvrable boats.<br><br>
+                    Skilled mariners and can serve even at rough seas.<br><br>
+                    Loaded with high-end modernized equipments.<br><br>                </p>
+            </div>
+        </article>
+        <article class="unit">
+            <div class="division-5">
+                <button class="unit-btn" onclick="openLink(event, 'Left')">UNIT-5:Skystrikers</button>
+                <p class="info">
+                    Specialized UAVs unit to keep a watch from the sky.<br><br>
+                    UAVs capable enough to carry weapon systems.<br><br>
+                    Higher endurance, longer range, faster and highly manoeuvrable.<br><br>
+                    Flown by skilled and licensed pilots.<br><br>             </p>
+            </div>
+        </article>
+        <article class="unit">
+            <div class="division-6">
+                <button class="unit-btn" onclick="openLink(event, 'Left')">UNIT-6:Digital Dominance</button>
+                <p class="info">
+                    Safety and security of network services.<br><br>
+                    Safeguarding the cyberspace.<br><br>
+                    Well built systems to attack and defend against all sort of cyber threats.<br><br>
+                    Capable to launch Electronic warfare.<br><br>                </p>
+            </div>
+        </article>
+        <script>
+            const questions = document.querySelectorAll(".unit");
+            questions.forEach((unit) => {
+                const btn = unit.querySelector(".unit-btn");
+                btn.addEventListener("click", () => {
+                    unit.classList.toggle("show-text");
+                });
+            });
+        </script>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <div class="tabcontent-contact">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+            <p>E-mail:xxxxxxx@xxxx.xxx</p>
+            <p>Contact:+91-***** *****</p>
+            <div class="maps">
+                <div class="map--1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217408.89455436615!2d74.73003520947466!3d31.63346767705272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0xeea2605bee84ef7d!2sAmritsar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1648728135098!5m2!1sen!2sin" 
+                    width="400" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="map--2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.6433229747!2d72.74109780863925!3d19.08252232377542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1648728354713!5m2!1sen!2sin" 
+                    width="400" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <div class="tabcontent-about">
+            <h3>About</h3>
+            <p>Just a sample website.</p>
+            <div class="slideshow">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./einstein.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./edison.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./Tesla.jpeg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+
+            </script>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
